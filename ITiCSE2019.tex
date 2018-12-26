@@ -160,14 +160,30 @@ HE Academy grant (to be referenced).
 
 What should be in the general curriculum.
 
-\subsection{Educational Resources}
+\subsection{Educational Resources: SQL Injection}
 It is 15 years since \cite{Guimaraesetal2004} 
 wrote ``All the topics listed above should be presented in the first
 Database Course'', and the first such topic was SQL injection \cite{SPIDynamics2002,Anonymous2018b}. SQL injection as an attack has been around for twenty years \cite{HornerHyslip2017a}, has its own cartoon (\url{https://xkcd.com/327/}, dating back to 2007 according to the Internet Archive) and website (\url{http://bobby-tables.com/}). Nevertheless SQL injection is still a major weakness: number one in the OWASP Top 10 \cite{OWASP2017a}, and has been in the Top 10 since at least 2003. 
 
-Clearly such a major weakness should be well-taught. One would like to think it is, but the first author has yet to meet a UK undergraduate who recalls being taught it \emph{outside} a specialist cyber-security course.  It's hard to determine what is taught, but a reasonable proxy for this is the content of recomended textbooks.
+Clearly such a major weakness should be well-taught. One would like to think it is, but the first author has yet to meet a UK undergraduate who recalls being taught it \emph{outside} a specialist cyber-security course.  In general it's hard to determine what is taught, but a reasonable proxy for this is the content of recomended textbooks. 
 
-JHD to write about Database books. \cite{Drop2019}. using \cite{StangerMartin2015a}
+Hence \cite{Drop2019} analyzed the database textbooks used by  44 of the top 50 Computer Science
+departments in the United States (using \cite{StangerMartin2015a}'s list, the other six didn't have a book listed). There were seven such boks, but three accounted for the 36 of the 44. Five of the seven (30 of the 44) had no mention of SQL injection. On the other two, the more popular one has a seriously flawed discussion\footnote{``However, they imply that using parameters is equivalent to using a function to add escape characters
+around user input. This is incorrect, as using parameters allows
+SQL statements to be pre-compiled, and prevents any user input
+from being interpreted as code, while escaping user input is not
+recommended as a sole defense since imperfect escape functions
+can easily be subverted.'' \cite{Drop2019}}, and the other, while generally excellent, had a presentational problem\footnote{``However, the fact that the first
+example should not be used is not discussed until two pages after
+the example in the text, and is not mentioned at all in the caption or
+on the page where the figure appears. This means a student who is
+skimming the text looking for an example to modify for their own
+code could simply copy the code that first appears in the example,
+without being aware that this is in fact an example of what they
+shouldn't do.'' \cite{Drop2019}}.
+
+\subsection{Informal Resources}
+The web abounds with informal resources: tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, who took the top five results from Google for six queries. Of these 30 tutorials, 6 had SQL injection weaknesses, and 3 had Cross-Site Scripting\footnote{Number 7 in WASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects GitHub found 82 instances of these fragments, of which 117 were verified by manual to be vulnerable --- 80\% of which were vulnerable to SQL injection.
 
 \subsection{Staff}
 JHD possibly to write about his recruitment experiences.  ? more IoC input?
@@ -192,7 +208,7 @@ Tech Partnership Degrees is a Not For Profit Organisation that provides endorsem
 The Institute of Coding is a not for profit organisation that intends to enhance how Digital Skills are developed in Higher Education in the UK. This could potentially include Cybersecurity related skills. Like the Tech Partnership the focus is upon job market requirements.  Given the size of this initiative this potentially has a significant role to play however at time of writing it is not clear what that shall be.
 
 \textbf{2. National Cyber Security Centre (NCSC)}
-The NCSC is a UK Government organisation tasked with enhancing the Cybersecurity of the UK. The NCSC publishes and accredits to a number of Cybersecurity standards \cite{NCCS2018a}. These standard are linked to the ACM recommendations for curricula. To date the major focus of NSSC acreditation has been upon Masters degrees specializing in Cybersecurity. More recently the NCSC has also began accrediting integrative masters programmes, undergraduate degrees in Cybersecurity and Computer Science degrees with a significant Cybersecurity focus \cite{NCCS2018b}.
+The NCSC is a UK Government organisation tasked with enhancing the Cybersecurity of the UK. The NCSC publishes and accredits to a number of Cybersecurity standards \cite{NCSC2018a}. These standard are linked to the ACM recommendations for curricula. To date the major focus of NSSC acreditation has been upon Masters degrees specializing in Cybersecurity. More recently the NCSC has also began accrediting integrative masters programmes, undergraduate degrees in Cybersecurity and Computer Science degrees with a significant Cybersecurity focus \cite{NCSC2018b}.
 
 Currently accredited are 15 Cybersecurity MSc programmes with a further 11 provisional accredited, 3 integrated masters Cybersecurity programmes and 1 Cybersecurity Degree Programme with a further 2 provisionally accredited. Hence the extent of accreditation is currently reasonably limited in terms of reach to Computer Science programmes. This appears to be a positive initiative that will hopefully further develop over time. 
 
