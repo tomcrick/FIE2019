@@ -201,10 +201,17 @@ code could simply copy the code that first appears in the example,
 without being aware that this is in fact an example of what they
 shouldn't do.'' \cite{Drop2019}}.
 
-\subsection{Informal Resources}
-The web abounds with informal resources: tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, who took the top five results from Google for six queries. Of these 30 tutorials, 6 had SQL injection weaknesses, and 3 had Cross-Site Scripting\footnote{Number 7 in WASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects GitHub found 82 instances of these fragments, of which 117 were verified by manual to be vulnerable --- 80\% of which were vulnerable to SQL injection.
+\subsection{Informal Resources}\label{sec:informal}
+The web abounds with informal resources: tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, who took the top five results from Google for six queries. Of these 30 tutorials, 6 had SQL injection weaknesses, and 3 had Cross-Site Scripting\footnote{Number 7 in OWASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects on GitHub found 82 instances of these fragments, of which 117 were verified by manual to be vulnerable --- 80\% of which were vulnerable to SQL injection.
 
-\cite{Mengetal2018a,Chenetal2019a,Zorz2019a}
+\subsection{The case of Java}\label{sec:Java}
+To the best of the authors' knowledge, no survey equivalent to \cite{Drop2019} has been done for Java textbooks. Indeed, many such books go nowhere near security applications.  But this means that the programmer who has to implement security is left to the documentation of the package/API being used, and to informal resuorces. \cite{Mengetal2018a} analysed 503 CyberSecurity-related postings on the popular Stack overflow (\url{https://stackoverflow.com}) resource.  53\% were about the Spring Security framework (\url{https://projects.spring.io/spring-security/}), dominated by authentication (45\%). The discussion \cite[\S4.3.1]{Mengetal2018a} of cross-site request forgery (CSRF) is especially worrying.  By default, Spring implcitly enables protection against this. But all the accepted answers to CSRF-related failures simply suggested disabling they check. There were no negative comments about this, and indeed a typical response is ``Adding \verb!csrf().disable()!
+solved the issue!!! I have no idea why it was enabled by default''.
+
+
+
+
+\cite{Chenetal2019a,Zorz2019a}
 
 \subsection{Staff}
 It is well known that CyberSecurity skills are in short supply, for example \cite{Page2018a}.
@@ -302,6 +309,13 @@ Good practice was identified at one university by the commendation:
 
 In summation, this shows that many UK HEIs have now embedded Cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. Clearly not all HEIs in the UK necessarily have to apply for accreditation, or apply for accreditation for all their programmes, but even so this is significant evidence of inclusion of Cybersecurity to an agreed standard.
 
+\section{Conclusions}
+
+We have the following recommendations.
+\begin{enumerate}
+\item Database courses should look carefully at the security aspects of the texts they use, and the examples they quote, on the lines of \cite{Drop2019}.
+\item All CS courses houdl emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}.
+\end{enumerate}
 
 \section*{Acknowledgements}
 Thanks to Sally Pearce, Academic Accreditation Manager, BCS, The Chartered Institute for IT for supplying the summary information related to Accreditation.
