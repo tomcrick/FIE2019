@@ -2,8 +2,9 @@
 %\documentclass[sigconf]{acmart}
 \documentclass[sigconf,anonymous]{acmart}
 \usepackage{paralist}
-\usepackage{url}
-\usepackage[hyphenbreaks]{breakurl}
+%\usepackage{url}
+%\usepackage{enumitem}
+%\usepackage[hyphenbreaks]{breakurl}
 
 \def\UrlBreaks{\do\/\do-}
 
@@ -126,7 +127,7 @@ reasonably ask how well this is done in practice.
 \subsection{CyberSecurity: for all or for specialists?}
 In one sense, this title is a false dichotomy: there is a serious need for cybersecurity specialists (estimates vary, but are always large: \cite{JCNSS2018a} has only anecdotal evidence), but also all in IT need to know \emph{some} CyberSecurity, as the recent fashion for talking about DevSecOps rather than just DevOps exemplifies.
 
-This is not a brand-new concern: see \cite{Parr2014a}
+This is not a brand-new concern: see \cite{Parr2014a} for concerns over five years ago, but it is a growing one. On the one hand, GDPR has increased the corporate penalties for failure, and therefore the demand for various forms of cybersecurity specialists, both explicitly by requiring Data Protection Officers\footnote{\cite{EU292016a} places quite strong requirements on these: ``expertise in national and European data protection laws and practices and an in-depth understanding of the GDPR'', as well as ``principles of data processing'', ``data protection by design and by default'' and ``security of processing''. It is hard to envisage one person possessing all these attributes, and indeed ``DPO as a service'' is being promoted \cite{McCreanor2018d}.} and implcitly by causing boards to invest more in cybersecurity. On the other hard, the growing publicity given to these, and the growing use of electronic payment, has also led to greater demand for staff in this area.
 
 AI: GDPR essentially expects CyberSecurity to be in all coding. 
 JHD: PCI DSS insists on a Web Application Firewall, which is only needed if you don't trust your applications.
@@ -145,12 +146,17 @@ There are various levels of specialism at which CyberSecurity education can be a
 \item The specialist CS masters graduate.
 \end{enumerate}
 The focus of this paper is on 2--3: the general CS graduate.
+\begin{description}
+\item[RQ1]What should be taught to the generalist?
+\item[RQ2]Should this be taught stand-alone or integrated?
+\item[RQ3]How might accreditation regard CyberSecurity
+\end{description}
 %\pagebreak - to fix URL issues
 \section{Policy Context}
 
-Substantial CS/digital curriculum reform across the
+There has been substantial CS/digital curriculum reform across the
 UK~\cite{crick+sentance:2011,brown-et-al:sigcse2013,wgictreview:2013,brown-et-al:toce2014,moller+crick:jce2018}
--- but what about focus on cybersecurity?
+--- but what has happened to the focus on cybersecurity?  The Institute of Coding \cite{Davenportetal2019a}, designed to improve digital skills for UK graduates, does indeed mention CyberSecurity, but merely as a sub-item in one work package (1.2a).
 
 UK national economic skills priority
 e.g. \url{https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021}
@@ -324,17 +330,17 @@ Short terms 90 Day Responses where required from 4 HEIs. The outcomes of these a
 4)	Of the 3 UG programmes involved, all 3 were refused.
  
 Good practice was identified at one university by the commendation:
- 
-"The second year project provides an opportunity for exploring security aspects in depth with an industrial use case"
-
-In summation, this shows that many UK HEIs have now embedded Cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. Clearly not all HEIs in the UK necessarily have to apply for accreditation, or apply for accreditation for all their programmes, but even so this is significant evidence of inclusion of Cybersecurity to an agreed standard.
+ \begin{quote}
+``The second year project provides an opportunity for exploring security aspects in depth with an industrial use case''.
+\end{quote}
+In sum, this shows that many UK HEIs have now embedded Cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. Clearly not all HEIs in the UK necessarily have to apply for accreditation, or apply for accreditation for all their programmes, but even so this is significant evidence of inclusion of Cybersecurity to an agreed standard.
 
 \section{Conclusions}
 
 We have the following recommendations.
 \begin{enumerate}
 \item Database courses should look carefully at the security aspects of the texts they use, and the examples they quote, on the lines of \cite{Drop2019}.
-\item All CS courses houdl emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}.
+\item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}.
 \end{enumerate}
 
 \section*{Acknowledgements}
