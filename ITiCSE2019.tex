@@ -1,5 +1,6 @@
 %%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
-\documentclass[sigconf]{acmart}
+%\documentclass[sigconf]{acmart}
+\documentclass[sigconf,anonymous]{acmart}
 \usepackage{paralist}
 \usepackage{url}
 \usepackage[hyphenbreaks]{breakurl}
@@ -114,7 +115,7 @@ In this paper, we frame a key social and global challenge in computing education
 Cybersecurity has been in the news for several years, generally prompted by spectacular breaches of one kind or another, such as \cite{BritishAirways2018a}.
 It needs attention across the spectrum:
 \begin{quote}
-change the culture in your organisation around cyber security; to try to do for cyber what has been done so successfully for health and safety, for example, over the last ten years - to get everybody to take it seriously; to take the risk management process seriously and drive that down through the organisation. \cite{Hannigan2019a}\footnote{Former Director of GCHQ: Brittain equivalent of NSA.}
+change the culture in your organisation around cyber security; to try to do for cyber what has been done so successfully for health and safety, for example, over the last ten years - to get everybody to take it seriously; to take the risk management process seriously and drive that down through the organisation. \cite{Hannigan2019a}\footnote{Former Director of GCHQ: British equivalent of NSA.}
 \end{quote}
 
 There are calls for education to respond to this situation, which it does both at the individual level and via recommended curricula \cite{ACM2013a} and professional accreditation requirements \cite{BCS2018a}. There has been a recent international working group \cite{Parrishetal2018a}, but this has yet to report.  We note that part of its third aim is to ``catalog existing [\dots] knowledge materials'', but there is no mention of any quality control over these (see section \ref{sec:SQL}).
@@ -133,14 +134,17 @@ JHD: PCI DSS insists on a Web Application Firewall, which is only needed if you 
 
 Specialist curricula abound: a recent one is \cite{ACMIEEEAISSIGSECIFIP}. However, given the shortage of specialists, in practice a good generalist with some CyberSecurity expertise can often get a ``specialist'' job.
 \subsection{Research Questions}
+There are various levels of specialism at which CyberSecurity education can be addressed.
 \begin{enumerate}
-\item The person in the street --- probably not. ({\emph{interesting point from a public engagement/science communication perspective -- aren't ``we'' trying to create a digitally competent and capable citizenry? Minor point but maybe worth mentioning e.g. being safe online, accessing public services, etc}})
-\item[JHD]This is important, agreed, but I think this is being a user: think car driving rather than car design. BUT the point I heard from the WC Engineers ``how can security be an option --- safety certainly isn't'' is also relevant.
+\item The person in the street --- this is important, but there are many initiatives in this area, which are, rightly, largely separated from computing education.
+% ({\emph{interesting point from a public engagement/science communication perspective -- aren't ``we'' trying to create a digitally competent and capable citizenry? Minor point but maybe worth mentioning e.g. being safe online, accessing public services, etc}})
+%\item[JHD]This is important, agreed, but I think this is being a user: think car driving rather than car design. BUT the point I heard from the WC Engineers ``how can security be an option --- safety certainly isn't'' is also relevant.
 \item The general CS graduate.
 \item The general CS masters graduate.
 \item The specialist CS graduate.
 \item The specialist CS masters graduate.
 \end{enumerate}
+The focus of this paper is on 2--3: the general CS graduate.
 %\pagebreak - to fix URL issues
 \section{Policy Context}
 
