@@ -232,7 +232,14 @@ The web abounds with informal resources: tutorials and code snippets. How good a
 To the best of the authors' knowledge, no survey equivalent to \cite{Drop2019} has been done for Java textbooks. Indeed, many such books go nowhere near security applications.  But this means that the programmer who has to implement security is left to the documentation of the package/API being used, and to informal resources. \cite{Mengetal2018a} analysed 503 Cybersecurity-related postings on the popular Stack overflow (\url{https://stackoverflow.com}) resource.  53\% were about the Spring Security framework (\url{https://projects.spring.io/spring-security/}), dominated by authentication (45\%). The discussion \cite[\S4.3.1]{Mengetal2018a} of cross-site request forgery (CSRF) is especially worrying.  By default, Spring implcitly enables protection against this. But all the accepted answers to CSRF-related failures simply suggested disabling they check. There were no negative comments about this, and indeed a typical response is ``Adding \verb!csrf().disable()!
 solved the issue!!! I have no idea why it was enabled by default''. As of writing (16 January 2018) there were no negative comments about this disabling of a vital security feature.
 \par
-\cite{Chenetal2019a,Zorz2019a} 
+This research was further developed by \cite{Chenetal2019a}  (and popularised in a security community in \cite{Zorz2019a}). Their first finding was
+\begin{quote}
+644 out of the 1,429 inspected answer posts
+(45\%) are insecure, meaning that insecure suggestions
+popularly exist on SO. Insecure answers dominate, in
+particular, the SSL/TLS category [355 insecure versus 150 secure]].
+\end{quote} 
+
 \subsection{Android}
 \cite{Fischeretal2017a} looked specifically at the use of resources from Stack Overflow in Android applications. Their key finding was this.
 \begin{quote}
@@ -349,7 +356,7 @@ In sum, this shows that many UK HEIs have now embedded Cybersecurity in their pr
 We have the following recommendations.
 \begin{enumerate}
 \item Database courses should look carefully at the security aspects of the texts they use, and the examples they quote, on the lines of \cite{Drop2019}.
-\item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}.
+\item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}. One should probably use the data frm \cite{Chenetal2019a}: ``If ou pikc up a SSL/TLS andwer from Stack Overflow, there's a 70\% chance it's insecure''.
 \item Accreditation is a valuable tool in improving the standard of Cybersecurity teaching, and spreading good practice, and should continue this.
 \end{enumerate}
 
