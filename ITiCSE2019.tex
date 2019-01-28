@@ -195,11 +195,12 @@ Is teaching Cybersecurity different? Lecturing is probably not the best way. Sho
 % should we frame this as one or more case studies?
 % do we have any national survey data?
 
-\subsection{PCI DSS}
-\cite{PCI2018b}.
+\subsection{PCI DSS}\label{sec:PCIDSS}
+The Payments Card Industry Data Security Standards \cite{PCI2018b} underpin all processing of credit/debit cards. Nevertheless, they are very rarely mentioned in generalist computer scientist courses --- one payments industry person commented ``I've given up even asking if recruits have heard of PCI DSS: it's so rare''. 
 
-Alastair to write about their Credit Fraud experience (MSc Cybersecurity).
-HE Academy grant (to be referenced).
+This would not matter so much if everyone handling payments data wer sent by their employers on an effective\footnote{``Effective'' is important: the Processing Director at one major acquirer commented ``I just caught two developers in the elevator discussing how to meet a customer requirement, and I had to tell them this was contrary to PCI DSS. Their response was that the customer wanted it!''.} PCI DSS course. However, the payments business is now so spread across websites, often run by SMEs, or non-specialists, that some provision should be made in courses.  Even larger enterprises are not immune: \cite{Barth2018a} reports that the recent British Airways breach was caused by a failure to adhere to PCI DSS in the website maintenance.
+
+%Alastair to write about their Credit Fraud experience (MSc Cybersecurity).  HE Academy grant (to be referenced).
 
 
 \subsection{Educational Resources: SQL Injection}\label{sec:SQL}
@@ -352,12 +353,17 @@ Good practice was identified at one university by the commendation:
 In sum, this shows that many UK HEIs have now embedded Cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. Clearly not all HEIs in the UK necessarily have to apply for accreditation, or apply for accreditation for all their programmes, but even so this is significant evidence of inclusion of Cybersecurity to an agreed standard.
 
 \section{Conclusions}
+As regards our research questions, we can make the following comments.
+\begin{description}
+\item[RQ1]
+\item[RQ2]The recommendation in \cite[p. 98]{ACM2013a} that Cybersecurity be taught largely through other Knowledge Areas is, in abstract, a good idea. Indeed, a recnt discussion on Cybersecurity had the aerospace engineers amazed that security was a separate topic: ``for us, safety is present everywhere''.  However, in the current state of education resources (sections \S\ref{sec:SQL}--\ref{sec:Java}) this may be a counsel of perfection.  It is mor eimportant that issues like SQL injection \cite{Drop2019} or correct use of SSL/TLS \cite{Chenetal2019a} be taught somewhere than tthat they not be taught at all.
+\item[RQ3]Accreditation (as practised by BCS) is a valuable tool in improving the standard of Cybersecurity teaching, and spreading good practice, and should continue this.
+\end{description}
 
 We have the following recommendations.
 \begin{enumerate}
 \item Database courses should look carefully at the security aspects of the texts they use, and the examples they quote, on the lines of \cite{Drop2019}.
-\item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}. One should probably use the data frm \cite{Chenetal2019a}: ``If ou pikc up a SSL/TLS andwer from Stack Overflow, there's a 70\% chance it's insecure''.
-\item Accreditation is a valuable tool in improving the standard of Cybersecurity teaching, and spreading good practice, and should continue this.
+\item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}. One should probably use the data frm \cite{Chenetal2019a}: ``If you pick up a SSL/TLS answer from Stack Overflow, there's a 70\% chance it's insecure''.
 \end{enumerate}
 
 \section*{Acknowledgements}
