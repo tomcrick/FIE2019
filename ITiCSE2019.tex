@@ -231,7 +231,8 @@ skimming the text looking for an example to modify for their own
 code could simply copy the code that first appears in the example,
 without being aware that this is in fact an example of what they
 shouldn't do.'' \cite{Drop2019}}.
-
+\par
+This blindness is not limited to textbooks: although Wikipedia has an excellent article on SQL Injection, it was not linked from the SQL page itself.\footnote{The authors intend to fix this after the paper is processed, so as ntto break anonymity.}
 \subsection{Informal Resources}\label{sec:informal}
 The web abounds with informal resources: tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, who took the top five results from Google for six queries. Of these 30 tutorials, 6 had SQL injection weaknesses, and 3 had Cross-Site Scripting\footnote{Number 7 in OWASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects on GitHub found 82 instances of these fragments, of which 117 were verified by manual to be vulnerable --- 80\% of which were vulnerable to SQL injection.
 
