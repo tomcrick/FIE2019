@@ -1,10 +1,10 @@
-targets = ITiCSE2019.pdf
+targets = FIE2019.pdf
 
 all: $(targets)
 
 pdflatex = pdflatex -interaction=errorstopmode -halt-on-error
 
-%.pdf:  %.tex ITiCSE2019.bib
+%.pdf:  %.tex FIE2019.bib
 	$(pdflatex) $<
 	bibtex $*
 	$(pdflatex) $<
