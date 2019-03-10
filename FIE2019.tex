@@ -124,8 +124,8 @@ This is not a brand-new concern: see \cite{Parr2014a} for concerns over five yea
 % JHD what are these?  Also the next paragraph needs thinking about
 
 AI: GDPR essentially expects CyberSecurity to be in all coding. 
-JHD: PCI DSS insists on a Web Application Firewall, which is only needed if you don't trust your applications.
 
+The Payments Industy \cite[6.6]{PCI2018b} insists on either independent code reviews by security specialists or a Web Application Firewall: essentially saying that the normal development process even after developers are trained in secore coding practices \cite[6.5]{PCI2018b} cannot be trusted to deliver secure code.
 
 Specialist curricula abound: a recent one is \cite{ACMIEEEAISSIGSECIFIP}. However, given the shortage of specialists, in practice a good generalist with some Cybersecurity expertise can often get a ``specialist'' job.
 \subsection{Research Questions}
@@ -185,8 +185,9 @@ etc -- link to UK Digital Strategy and UK Industrial Strategy.
 
 \section{Challenges}
 
-What should be in the general curriculum.  Pervasive (as in Maths or LSEPI) rather than specialist option.  
-{\bf JHD to research ACM general curriculum;}
+%What should be in the general curriculum.  Pervasive (as in Maths or LSEPI) rather than specialist option.  
+%{\bf JHD to research ACM general curriculum;}
+The ACM general curriculum \cite{ACM2013a} states 3 Tier-1 and 6 Tier-2 hours for ``Information Assurance and Security'', but this is the ``IAS-only'' topics, and ACM expects 32 Tier-1 and 31.5 Tier-2 Hours for IAS topics embedded in other Knowledge Areas.
 
 The UK's official knowledge resource, the CyBOK project \cite{Bristol2019a}, has produced reference documentation for some (2 final, 3 for comment out of a planned total of 19) knowledge areas, which are useful references for the experienced educator looking for a definition or characterisation, but a long way frm being a textbook (which is not their aim).
 
@@ -201,7 +202,7 @@ Is teaching Cybersecurity different? Lecturing is probably not the best way. Sho
 \subsection{PCI DSS}\label{sec:PCIDSS}
 The Payments Card Industry Data Security Standards \cite{PCI2018b} underpin all processing of credit/debit cards. Nevertheless, they are very rarely mentioned in generalist computer scientist courses --- one payments industry person commented ``I've given up even asking if recruits have heard of PCI DSS: it's so rare''. 
 
-This would not matter so much if everyone handling payments data wer sent by their employers on an effective\footnote{``Effective'' is important: the Processing Director at one major acquirer commented ``I just caught two developers in the elevator discussing how to meet a customer requirement, and I had to tell them this was contrary to PCI DSS. Their response was that the customer wanted it!''.} PCI DSS course. However, the payments business is now so spread across websites, often run by SMEs, or non-specialists, that some provision should be made in courses.  Even larger enterprises are not immune: \cite{Barth2018a} reports that the recent British Airways breach was caused by a failure to adhere to PCI DSS in the website maintenance.
+This would not matter so much if everyone handling payments data were sent by their employers on an effective\footnote{``Effective'' is important: the Processing Director at one major acquirer commented ``I just caught two developers in the elevator discussing how to meet a customer requirement, and I had to tell them this was contrary to PCI DSS. Their response was that the customer wanted it!''.} PCI DSS course. However, the payments business is now so spread across websites, often run by SMEs, or non-specialists, that some provision should be made in courses.  Even larger enterprises are not immune: \cite{Barth2018a} reports that the recent British Airways breach was caused by a failure to adhere to PCI DSS in the website maintenance.
 
 %Alastair to write about their Credit Fraud experience (MSc Cybersecurity).  HE Academy grant (to be referenced).
 
