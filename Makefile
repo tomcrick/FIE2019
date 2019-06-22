@@ -1,4 +1,4 @@
-targets = FIE2019.pdf
+targets = FIE2019-final.pdf
 
 all: $(targets)
 
