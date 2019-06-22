@@ -102,7 +102,38 @@ another thing to deliver appropriate and relevant education and skills; furtherm
 
 In one sense, this section title is a false dichotomy: there is a serious need for cybersecurity specialists (estimates vary, but are always large), but also all in IT need to know \emph{some} cybersecurity -- thus, there is a case for depth as well as breadth~\cite{manson+pike:2014}. But this is not a new concern: see~\cite{Parr2014a} for concerns over five years ago, but it is a growing one. Recent evolution of cybersecurity shows that it has begun to take shape as a true academic perspective, as opposed to simply being a training domain for certain specialised jobs. More recent work presents cybersecurity as a ``meta-discipline''; that is, cybersecurity should be used as an aggregate label for a wide variety of similar disciplines, much in the same way that the terms ``engineering'' and ``computing'' are commonly used~\cite{Parrishetal2018b}. 
 
-% this section feels someone disjoint from what we have written so far...
+%\subsection{Policy Context}
+
+This need to build knowledge, skills and capacity in the area of cybersecurity has led to the establishment of a number of initiatives from a number of national governments, for example the UK's Cyber Security Strategy~\cite{UKCabinetOffice} (and the setting up of the UK National Cyber Security Centre), or National Initiative for Cybersecurity Education (NICE) in the USA \cite{NICE}. 
+
+The teaching of cybersecurity in higher education pre-dates these initiatives and there has been recognition of the need for the inclusion of cybersecurity as part of the Computer Science discipline for a number of years \cite{Hentea2006}. There has been a debate as to whether cybersecurity is distinct discipline from Computer Science \cite{McGettrick2013}. The consensus now is that cybersecurity is both a discipline in its own right and that cybersecurity should be taught within Computer Science and related degrees. There have been a number of international initiatives international to define curricula to support this for example the ACM Computer Science Curricula Recommendations \cite[which added ``Information Assurance and Security'' for the first time]{ACM2013a} and specialised cybersecurity Programmes \cite{ACMIEEEAISSIGSECIFIP}.
+
+% TC to add policy+skills context
+% inc. new EU cybersecurity Act: https://ec.europa.eu/commission/news/cybersecurity-act-2018-dec-11_en
+% PPP e.g. Carr work and IEE Comp ref, Conklin papder
+% Cyber Essentials Scheme
+
+% should this be done at school?
+There has been substantial computer science and digital skills curriculum reform across the UK~\cite{brown-et-al:toce2014,moller+crick:jce2018} --- but what has happened to the focus on cybersecurity? The Institute of Coding \cite{Davenportetal2019a}, designed to improve digital skills for UK graduates, does indeed mention cybersecurity, but merely as a sub-item in one work package (1.2a).
+
+%This is basically note form: JHD suggests deleting
+%UK national economic skills priority
+%e.g. \url{https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021}
+%(esp. \url{https://publications.parliament.uk/pa/jt201719/jtselect/jtnatsec/706/70605.htm}
+%(especially \cite{JCNSS2018a}
+%and \url{https://www.ncsc.gov.uk/blog/skills-and-training} and
+%\url{https://www.cybersecuritychallenge.org.uk/}). 
+
+%There is large-scale media attention on the ``cybersecurity skills gap''
+%e.g. \url{https://www.contracts.mod.uk/do-features-and-articles/digital-skills-shortage-threatens-uk-cyber-security/}
+%and
+%\url{https://www.itpro.co.uk/cyber-security/31554/uk-government-lacks-urgency-in-tackling-cyber-security-skills-gap}
+%etc -- link to UK Digital Strategy and UK Industrial Strategy.
+
+
+% need a better title for this!
+\subsection{Some Examples}
+
 To illustrate some of these challenges, four examples are briefly explored: the European Union's General Data Protection Regulation (GDPR); Agile development; one industry sector (with rigorous demands for secure software); and impact of these cases upon one another.
 
 On the one hand, GDPR has increased the corporate penalties for failure, and therefore the demand for various forms of cybersecurity specialists, both explicitly by requiring Data Protection Officers\footnote{\cite{EU292016a} places quite strong requirements on these: ``expertise in national and European data protection laws and practices and an in-depth understanding of the GDPR'', as well as ``principles of data processing'', ``data protection by design and by default'' and ``security of processing''. It is hard to envisage one professional possessing all these attributes and capabilities, and indeed ``DPO as a service'' is being promoted \cite{McCreanor2018d}.} and implicitly by causing organisations to re-think models for governance and assurance, and to invest more in cybersecurity. On the other hard, the growing publicity given to these, and the growing use of electronic payments, has also led to greater demand for expertise in this area.
@@ -116,7 +147,7 @@ A number of studies have documented the challenges of aligning security methods 
 
 This can be further illustrated by the demands of particular sectors for secure software. Considering the case of the Payments Industry \cite[6.6]{PCI2018b} which insists on either independent code reviews by security specialists or a Web Application Firewall: essentially saying that the normal development process even after developers are trained in secure coding practices \cite[6.5]{PCI2018b} cannot be trusted to deliver secure code. 
 
-\subsection{Research Questions}
+\section{Research Questions}
 There are various levels of specialism at which cybersecurity education can be addressed.
 \begin{enumerate}
 \item The general public --- this is important, but there are many initiatives in this area (e.g. Cyber Essentials\footnote{Cyber Essentials is a UK Government-backed, industry-supported scheme to help organisations protect themselves against common online threats: \url{https://www.cyberessentials.ncsc.gov.uk}}, which are, rightly, largely separated from computing education.
@@ -143,7 +174,7 @@ In order to address RQ1 and RQ2 a number of case studies pertaining to challenge
 
 Finally, in order to address RQ3 cases studies are evaluated related to the challenges and successes of PSRB accreditation of cybersecurity in undergraduate computer science in one jurisdiction (the UK). As discussed in the current situation section, in this jurisdiction mandating cybersecurity within PSRB accreditation is at a reasonably mature stage.
 
-\subsection{Current situation}
+\subsection{Current State of Play}
 The ACM/IEEE-CS Joint Task Force on Computing Curricula~\cite[p.~97]{ACM2013a} takes a distinct view on the Knowledge Areas (KAs) related to RQ2:
 \begin{quote}
 {\emph{The Information Assurance and Security KA is unique among the set of KAs presented here
@@ -166,36 +197,6 @@ It is at least plausible to attribute this difference to differences in the accr
 \item[US]ACM has equally had cybersecurity (``Information Assurance and Security'' --- IAS) in the curriculum since 2013 \cite{ACM2013a}, but it is not the accrediting body. ABET is, and is requiring IAS with effect from the 2019-20 cycle (self study reports due 1 July 2019): more precisely \cite[Table 3]{Oudshoornetal2018a} ``The computing topics must include: \dots{} Principles and practices for secure computing \dots. This should mean that  all accredited universities should be compliant by 2025 (because of the six-year cycle).
 %\cite[chapter 7]{Davenportminor2019a}.  % need a better reference
 \end{description}
-
-% move this section back to Intro?
-\section{Policy Context}
-
-% TC: mention NCSC
-For a few years now there has been a recognised need to build knowledge, skills and capacity in the area of cybersecurity. This need has led to the establishment of a number of initiatives from a number of national governments for example The UK Cyber Security Strategy. \cite{UKCabinetOffice} or National Initiative for Cybersecurity Education (NICE) in the USA \cite{NICE}. 
-
-The teaching of cybersecurity in higher education pre-dates these initiatives and there has been recognition of the need for the inclusion of cybersecurity as part of the Computer Science discipline for a number of years \cite{Hentea2006}. There has  been a debate as to whether cybersecurity is distinct discipline from Computer Science \cite{McGettrick2013}. The consensus now is that cybersecurity is both a discipline in its own right and that cybersecurity should be taught within Computer Science and related degrees. There have been a number of international initiatives international to define curricula to support this for example the ACM general curriculum  \cite[which added ``Information Assurance and Security'' for the first time]{ACM2013a} and specialised cybersecurity Programmes \cite{ACMIEEEAISSIGSECIFIP}.
-
-% TC to add policy+skills context
-% inc. new EU cybersecurity Act: https://ec.europa.eu/commission/news/cybersecurity-act-2018-dec-11_en
-% PPP e.g. Carr work and IEE Comp ref, Conklin papder
-% Cyber Essentials Scheme
-
-% should this be done at school?
-There has been substantial computer science and digital skills curriculum reform across the UK~\cite{brown-et-al:toce2014,moller+crick:jce2018} --- but what has happened to the focus on cybersecurity? The Institute of Coding \cite{Davenportetal2019a}, designed to improve digital skills for UK graduates, does indeed mention cybersecurity, but merely as a sub-item in one work package (1.2a).
-
-%This is basically note form: JHD suggests deleting
-%UK national economic skills priority
-%e.g. \url{https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021}
-%(esp. \url{https://publications.parliament.uk/pa/jt201719/jtselect/jtnatsec/706/70605.htm}
-%(especially \cite{JCNSS2018a}
-%and \url{https://www.ncsc.gov.uk/blog/skills-and-training} and
-%\url{https://www.cybersecuritychallenge.org.uk/}). 
-
-%There is large-scale media attention on the ``cybersecurity skills gap''
-%e.g. \url{https://www.contracts.mod.uk/do-features-and-articles/digital-skills-shortage-threatens-uk-cyber-security/}
-%and
-%\url{https://www.itpro.co.uk/cyber-security/31554/uk-government-lacks-urgency-in-tackling-cyber-security-skills-gap}
-%etc -- link to UK Digital Strategy and UK Industrial Strategy.
 
 \section{Challenges: RQ1 and RQ2}
 
@@ -430,7 +431,7 @@ We have the following specific recommendations.
 \section*{Acknowledgements}
 Thanks to Sally Pearce, Academic Accreditation Manager (BCS, The Chartered Institute for IT) for supplying the summary information related to Accreditation. Many people, accreditors and accredited, have contributed to improving the standard of cybersecurity teaching in the UK, and spreading good practice.
 
-\IEEEtriggeratref{43}
+%\IEEEtriggeratref{43}
 
 \bibliographystyle{IEEEtran}
 \bibliography{FIE2019} 
