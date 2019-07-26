@@ -178,107 +178,75 @@ The UK situation is distinctly different: 61\% of UK courses offer mandatory cyb
 \item[USA] The Association of Computing Machinery (ACM) has equally had cybersecurity (IAS: ``Information Assurance and Security'') in the curriculum since 2013~\cite{ACM2013a}, but it is not the accrediting body. The Accreditation Board for Engineering and Technology (ABET) is, and is requiring IAS with effect from the 2019-20 cycle (self-study reports due 1 July 2019): more precisely \cite[Table 3]{Oudshoornetal2018a} ``{\emph{The computing topics must include: \dots{} Principles and practices for secure computing\dots}}''. This should mean that  all accredited universities should be compliant by 2025 (due to their six-year cycle).
 \end{description}
 
-\section{Challenges: {\emph{RQ1}} and {\emph{RQ2}}}
+\section{Challenges: ({\emph{RQ1}} and {\emph{RQ2}})}
 
 %What should be in the general curriculum.  Pervasive (as in Maths or LSEPI) rather than specialist option.  
-The ACM Computer Science Curricula Recommendations~\cite{ACM2013a} states three Tier-1 and six Tier-2 hours for ``Information Assurance and Security'', but this is the ``IAS-only'' topics, and ACM expects 32 Tier-1 and 31.5 Tier-2 Hours for IAS topics embedded in other Knowledge Areas.
+The ACM Computer Science Curricula Recommendations~\cite{ACM2013a} states three Tier-1 and six Tier-2 hours for ``Information Assurance and Security'', but this is the ``IAS-only'' topics, and ACM expects 32 Tier-1 and 31.5 Tier-2 hours for IAS topics embedded in other Knowledge Areas.
 
-The UK's official body of knowledge resource, the CyBOK project\cite{Bristol2019a}, has produced reference documentation for some (as of June 2019: five final, seven for comment, out of a planned total of 19)   % JHD updated figures 21/6/2019
-knowledge areas, which are useful references for the experienced educator looking for a definition or characterisation, but a long way from being a textbook (which is not their aim).
+The UK's official body of knowledge resource, the CyBOK project~\cite{Bristol2019a}, has produced reference documentation for some (as of June 2019: five final, seven for comment, out of a planned total of 19) knowledge areas, which are useful references for the experienced educator looking for a definition or characterisation, but a long way from being a textbook (which is not their aim). 
+% JHD updated figures 21/6/2019 
 
 %AI noted the workshops with (ISC)$^2$, with the ``this is a fad'' concept.  {\bf AI to write up}.
   % Should we remove this?  This raises pedagogic questions which are beyond the scope of this research to resolve. Should we be teaching content because it's underpinning?; or because there's a skill shortage?  
 
 \subsection{Industry Standards: PCI DSS}\label{sec:PCIDSS}
 
-Is teaching cybersecurity different? Lecturing is probably not the best way. Should we use real-life case studies (e.g. British Airways \cite{Barth2018a}). \cite{Weiss:2013:THC:2527148.2527180} suggests that there are benefits from teaching this discipline area in a more practical manner.  There are a number of ways a more practical manner could be action, one would be by the inclusion of pertinent cybersecurity standards in the curricula.
+Is teaching cybersecurity different from other computing topics? Lecturing is probably not the best way; how should we use real-life case studies (e.g. British Airways \cite{Barth2018a}) and authentic assessment? Recent work suggests that there are benefits from teaching this discipline area in a more practical manner \cite{Weiss:2013:THC:2527148.2527180}; one would be by the inclusion of pertinent cybersecurity standards in the curricula.
 
-The Payments Card Industry Data Security Standards (PCI DSS)~\cite{PCI2018b} is one such standard. PCI DSS underpins all processing of credit/debit cards. Nevertheless, they are very rarely mentioned in generalist computer scientist courses. This would not matter so much if everyone handling payments data were sent by their employers on an effective PCI DSS course. However, the payments business is now so spread across websites, often run by small and medium enterprises (SME), or non-specialists.  Even larger enterprises are not immune: \cite{Barth2018a} reports that the recent British Airways breach was caused by a failure to adhere to PCI DSS in the website maintenance. 
+The {\emph{Payments Card Industry Data Security Standards}} (PCI DSS)~\cite{PCI2018b} is one such standard, underpinning all processing of credit/debit cards globally. Nevertheless, they are very rarely mentioned in generalist computer scientist courses. This would not matter so much if everyone handling payments data were sent by their employers on an effective PCI DSS course. However, the payments business is now so spread across websites, often run by small and medium enterprises (SME), or non-specialists.  Even larger enterprises are not immune: the 2018 British Airways breach was caused by a failure to adhere to PCI DSS in the website maintenance~\cite{Barth2018a}. 
 
-It is an interesting question as to whether standards such as PCI DSS should be addressed within degree courses (clearly degree courses can never cover all standards) or whether they should be addressed in professional training courses. However it appears the current situation is not ideal from the perspective of industry (or users of systems) and the inclusion of pertinent standards could be seen as a useful enhancement activity to the coverage of cybersecurity within generalist %undergraduate: JHD commented out, I don't think we mean this, and I teach it at MSc.
-computer science courses.
+It is an interesting question as to whether standards such as PCI DSS should be addressed within degree courses (clearly degree courses can never cover all standards) or whether they should be addressed in professional training courses. However it appears the current situation is not ideal from the perspective of industry (or users of systems) and the inclusion of key standards could be seen as a valuable enhancement activity to the coverage of cybersecurity within generalist computer science courses.
 
 \subsection{Educational Resources}\label{sec:EDResource}
 
 \subsubsection{SQL Injection}\label{sec:SQL}
 
-It is 15 years since \cite{Guimaraesetal2004} 
-wrote ``{\emph{All the topics listed above should be presented in the first
-Database Course}}'', and the first such topic was SQL injection \cite{SPIDynamics2002,Anonymous2018b}. SQL injection as an attack has been around for twenty years \cite{HornerHyslip2017a}, has its own cartoon\footnote{\url{https://xkcd.com/327/}, dating back to 2007, according to the Internet Archive} and website\footnote{\url{http://bobby-tables.com/}}. Nevertheless SQL injection is still a major weakness: number one in the Open Web Application Security Project (OWASP) Top 10 \cite{OWASP2017a}, and has been in the Top 10 since at least 2003.  \cite[the UK's definitive reference]{Bristol2018a} states ``{\emph{\ldots a wide range of attack techniques for exploiting SQL
-injection or script injection are known and documented.}}''.
+It is 15 years since \cite{Guimaraesetal2004} wrote ``{\emph{All the topics listed above should be presented in the first Database Course}}'', and the first such topic was SQL injection \cite{SPIDynamics2002,Anonymous2018b}. SQL injection as an attack has been around for twenty years \cite{HornerHyslip2017a}, has its own cartoon and website\footnote{See: \url{https://xkcd.com/327/} (dating back to 2007, according to the Internet Archive) and \url{http://bobby-tables.com/}}. Nevertheless SQL injection is still a major weakness: number one in the Open Web Application Security Project (OWASP) Top 10 \cite{OWASP2017a}, and has been in the Top 10 since at least 2003. CyBOK states ``{\emph{\ldots a wide range of attack techniques for exploiting SQL injection or script injection are known and documented.}}''~\cite{Bristol2018a}.
 
-Clearly such a major weakness should be well-taught.  In general it is hard to determine what is taught, but a reasonable proxy for this is the content of recommended textbooks. 
-
-% Drop2019 was awarded the (unique) best paper at SIGCSE2019 - not sure what to make of this.
-Hence \cite{Drop2019} analysed the database textbooks used by  44 of the top 50 computer science
-departments in the USA. % (using \cite{StangerMartin2015a}'s list, the other six didn't have a book listed). 
-There were seven such books, but three books accounted for the 36 of the 44 universities. Five of the seven (30 of the 44) had no mention of SQL injection. On the other two, the more popular one has a seriously flawed discussion\footnote{``{\emph{However, the paper implies that using parameters is equivalent to using a function to add escape characters
-around user input. This is incorrect, as using parameters allows
-SQL statements to be pre-compiled, and prevents any user input
-from being interpreted as code, while escaping user input is not
-recommended as a sole defense since imperfect escape functions
-can easily be subverted.}}''~\cite{Drop2019}}, and the other, while generally excellent, had a presentational problem\footnote{``{\emph{However, the fact that the first
-example should not be used is not discussed until two pages after
-the example in the text, and is not mentioned at all in the caption or
-on the page where the figure appears. This means a student who is
-skimming the text looking for an example to modify for their own
-code could simply copy the code that first appears in the example,
-without being aware that this is in fact an example of what they
-shouldn't do.}}''~\cite{Drop2019}}.
-This oversight is not limited to textbooks: although Wikipedia has an article on SQL Injection, it was not linked from the SQL page itself.\footnote{Fixing this is a suggestion for future work.}
+Clearly such a major weakness should be well-taught; in general it is hard to determine what is actually delivered as part of a specific degree programme, but a reasonable proxy for this is the content of recommended textbooks. This was the rationale for a 2019 analysis of database textbooks used by 44 of the top 50 computer science departments in the USA\cite{Drop2019}.  There were seven such books, but three books accounted for the 36 of the 44 universities. Five of the seven (30 of the 44) had no mention of SQL injection. On the other two, the more popular one has a seriously flawed discussion\footnote{``{\emph{However, the paper implies that using parameters is equivalent to using a function to add escape characters around user input. This is incorrect, as using parameters allows SQL statements to be pre-compiled, and prevents any user input from being interpreted as code, while escaping user input is not recommended as a sole defense since imperfect escape functions can easily be subverted.}}''~\cite{Drop2019}}, and the other, while generally excellent, had a presentational problem\footnote{``{\emph{However, the fact that the first example should not be used is not discussed until two pages after the example in the text, and is not mentioned at all in the caption or on the page where the figure appears. This means a student who is skimming the text looking for an example to modify for their own code could simply copy the code that first appears in the example, without being aware that this is in fact an example of what they shouldn't do.}}''~\cite{Drop2019}}. This oversight is not limited to textbooks: although Wikipedia has an article on SQL Injection, it was not linked from the SQL page itself at the time of writing.%\footnote{Fixing this is a suggestion for future work.}
 
 \subsubsection{The Case of Java}\label{sec:Java}
 
-A recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for  Java textbooks. Indeed, many such books go nowhere near security applications.  But this means that the programmer who has to implement security is left to the documentation of the package/API being used, and to informal resources. \cite{Mengetal2018a} analysed 503 cybersecurity-related postings on the popular Stack Overflow online resource.  53\% were about the Spring Security framework\footnote{\url{https://projects.spring.io/spring-security/}}, dominated by authentication (45\%). The discussion \cite[\S4.3.1]{Mengetal2018a} of cross-site request forgery (CSRF) is especially worrying.  By default, Spring implicitly enables protection against this. But all the accepted answers to CSRF-related failures simply suggested disabling the check. There were no negative comments about this, and indeed a typical response is ``Adding \verb!csrf().disable()!
-solved the issue!!! I have no idea why it was enabled by default''. As of writing (22 June 2019) there were no negative comments about this disabling of a vital security feature. This research was further developed by \cite{Chenetal2019a}  (and popularised in a security community in \cite{Zorz2019a}). Their first finding was:
+A recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for  Java textbooks. Indeed, many such books go nowhere near security applications.  But this means that the programmer who has to implement security is left to the documentation of the package/API being used, and to informal resources. \cite{Mengetal2018a} analysed 503 cybersecurity-related postings on the popular Stack Overflow online resource.  53\% were about the Spring Security framework\footnote{\url{https://projects.spring.io/spring-security/}}, dominated by authentication (45\%). The discussion \cite[\S4.3.1]{Mengetal2018a} of cross-site request forgery (CSRF) is especially worrying.  By default, Spring implicitly enables protection against this. But all the accepted answers to CSRF-related failures simply suggested disabling the check. There were no negative comments about this, and indeed a typical response is ``{\emph{Adding}} \verb!csrf().disable()!
+{\emph{{solved the issue!!! I have no idea why it was enabled by default}}''. As of writing, there were no negative comments about this disabling of a vital security feature. This research was further developed by \cite{Chenetal2019a}  (and popularised in a security community in \cite{Zorz2019a}). Their first finding was:
 
 \begin{quote}
-{\emph{644 out of the 1,429 inspected answer posts
+``{\emph{644 out of the 1,429 inspected answer posts
 (45\%) are insecure, meaning that insecure suggestions
 popularly exist on SO. Insecure answers dominate, in
-particular, the SSL/TLS category}} [355 insecure versus 150 secure, i.e. $>70$\%].
+particular, the SSL/TLS category}}''\newline[355 insecure versus 150 secure, i.e. $>70$\%].
 \end{quote} 
 
 \subsubsection{Android}\label{sec:Android}
 
-A recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for Android textbooks; \cite{Fischeretal2017a} looked specifically at the use of resources from Stack Overflow in Android applications. The key finding was this:
+Another recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for Android textbooks; \cite{Fischeretal2017a} looked specifically at the use of resources from Stack Overflow in Android applications. The key finding was:
+
 \begin{quote}
-{\emph{We found that 15.4\% of all 1.3 million Android applications
+``{\emph{We found that 15.4\% of all 1.3 million Android applications
 contained security-related code snippets from
 Stack Overflow. Out of these 97.9\% contain at least one
-insecure code snippet.}}
+insecure code snippet.}}''
 \end{quote}
 
-Two caveats (in opposite directions) should be noted. The labelling was conservative, in that snippets were only labelled as insecure if that was demonstrable, and, for example, mere use of outdated SSL/TLS was not automatically deemed insecure. On the other hand, the insecure snippet might have been used in a way that did not expose the insecurity.
-\par
-The uncritical reading of Stack Overflow was also noted in \cite[Slide 29]{Votipkaetal2019a}. Their key recommendation  \cite[Slide 32]{Votipkaetal2019a} is ``{\emph{Improve documentation: Clarify what you can(not) copy/paste}}''. 
+Two caveats (in opposite directions) should be noted. The labelling was conservative, in that snippets were only labelled as insecure if that was demonstrable, and, for example, mere use of outdated SSL/TLS was not automatically deemed insecure. On the other hand, the insecure snippet might have been used in a way that did not expose the insecurity. The uncritical reading of Stack Overflow was also noted in \cite[Slide 29]{Votipkaetal2019a}. Their key recommendation~\cite[Slide 32]{Votipkaetal2019a} was ``{\emph{Improve documentation: Clarify what you can(not) copy/paste}}''. 
 
 \subsubsection{Agile}
 
-A recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for ``Agile'' textbooks. Many authors have found disconnects between Agile practices and secure software development: notably \cite{Bartsch2011a} for small projects and \cite{vanderHeijden:2018:EPS:3239235.3267426} for large projects.
-\par
-Agile's preference for functionality over non-functional requirements is clearly displayed in practice. \cite{Naiakshinaetal2017a} asked 20 student developers to imagine they
-were part of a team working on creating a social networking site for
-our university and to implement a password storage mechanism for this. 10 (``primed'') were explicitly told that the storage had to be secure and 10 (``unprimed'') were not. None of the unprimed ones implemented any security.
+A further recommendation for future work is a comprehensive survey equivalent to \cite{Drop2019} for ``Agile'' textbooks. Many authors have found disconnects between Agile practices and secure software development: notably \cite{Bartsch2011a} for small projects and \cite{vanderHeijden:2018:EPS:3239235.3267426} for large projects. Agile's preference for functionality over non-functional requirements is clearly displayed in practice. \cite{Naiakshinaetal2017a} asked 20 student developers to imagine they were part of a team working on creating a social networking site for our university and to implement a password storage mechanism for this. 10 (``primed'') were explicitly told that the storage had to be secure and 10 (``unprimed'') were not. None of the unprimed ones implemented any security. This would also reaffirm the point raised in section~\ref{sec:PCIDSS}, regarding the effective use of industrial case studies and authentic assessment approaches.
 
 \subsubsection{Informal Resources}\label{sec:informal}
 
-The web abounds with informal resources: tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, This research took the top five results from Google for six queries. Of these 30 tutorials, six had SQL injection weaknesses, and three had Cross-Site Scripting\footnote{Number 7 in OWASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects on GitHub found 820 instances of these fragments, of which 117 were verified manually to be vulnerable --- 80\% of which were vulnerable to SQL injection. Some students clearly make use of these resources, a recommendation of future work is to explore and evaluate students' (and indeed others') use of such informal resources. 
+The web abounds with informal resources, such as tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, taking the top five search results from Google for six queries. Of these 30 tutorials, six had SQL injection weaknesses, and three had Cross-Site Scripting\footnote{Number 7 in OWASP's Top Ten \cite{OWASP2017a}.} weaknesses. Searching for these fragments in PHP projects on GitHub found 820 instances of these fragments, of which 117 were verified manually to be vulnerable --- 80\% of which were vulnerable to SQL injection. Some students clearly make use of these resources; thus a recommendation of future work is to explore and evaluate students' (and indeed others') use of such informal resources. 
 
-\subsection{Staff}
+\subsection{Faculty}
 
-It is well known that cybersecurity skills are in short supply~\cite{schneider2013}. For example:
+It is well known that cybersecurity skills are in short supply, in both industry~\cite{Ackerman2019a} and academia~\cite{schneider2013}. For example, research into the state of IT conducted annually by Enterprise Strategy Group (ESG) has revealed that the skills gap in information security continues to widen and has doubled in the past five years; in 2014, 23\% of respondents to the survey stated that their organisation had a problematic shortage of information security skills -- this had climbed to 51\% at the beginning of 2018~\cite{ESG:2018}. Clearly, this is an issue which is being felt across many industries and organisations, and is a concern which extends beyond IT leadership into the boardroom.
 
-\begin{quote}
-% JHD: I am in touch with ESG to try to find more, and someUK-specific numbers.
-{\emph{Research into the state of IT conducted annually by Enterprise Strategy Group (ESG)\footnote{Apparently \url{https://www.esg-global.com/research/esg-brief-2018-cybersecurity-spending-trends}.} has revealed that the skills gap in information security continues to widen and has doubled in the past five years. In 2014, 23\% of respondents to the survey stated that their organisation had a problematic shortage of information security skills. This had climbed to 51\% at the beginning of this year. Clearly, this is an issue which is being felt across many industries and organisations, and is a concern which extends beyond IT leadership into the boardroom.}}~\cite{Page2018a}
-\end{quote}
+The ESG survey is international, but ESG have confirmed that the UK figures are very similar. In the UK, there has been a resurgence of job adverts to recruit academic staff with specialisms in cybersecurity over the past three years. The demand for cybersecurity skills in industry makes it difficult for academia to attract academics with knowledge, practical experience, research background and academic aspirations. As universities expand their cybersecurity provision it is not uncommon to find multiple jobs advertised at the same time. Recent example have included a professor of cybersecurity, two senior academic positions and two junior academic positions in one advert. There are other examples in the UK of cybersecurity lecturing jobs remaining unfilled for longer than a year; there are also examples of cybersecurity research groups moving en masse from one university to another.
 
-The ESG survey is international, but ESG have confirmed that the UK figures are very similar. In the UK, there is a prominence of job adverts to recruit academic staff with specialisms in cybersecurity. The demand for cybersecurity skills in industry makes it difficult for academia to attract academics with knowledge, practical experience, research background and academic aspirations. As universities expand their cybersecurity provision it is not uncommon to find multiple jobs advertised at the same time. Recent example have included a professor of cybersecurity, two senior academic positions and two junior academic positions in one advert. There are other examples in the UK of cybersecurity lecturing jobs remaining unfilled for longer than a year; there are also examples of cybersecurity subject groups moving en masse from one university to another.
-
-%Not sure if we want to raise something about funding of posts? Poaching of staff ??
-%Is this too contentious
-%TC: probably out of scope for this paper
+% \begin{quote}
+% ``{\emph{Research into the state of IT conducted annually by Enterprise Strategy Group (ESG)\footnote{Apparently \url{https://www.esg-global.com/research/esg-brief-2018-cybersecurity-spending-trends}.} has revealed that the skills gap in information security continues to widen and has doubled in the past five years. In 2014, 23\% of respondents to the survey stated that their organisation had a problematic shortage of information security skills. This had climbed to 51\% at the beginning of this year. Clearly, this is an issue which is being felt across many industries and organisations, and is a concern which extends beyond IT leadership into the boardroom.}}''~\cite{Page2018a}
+% \end{quote}
 
 %{\bf JHD to ? Poll CPHC, and/or survey job adverts.}
 \section{Accreditation by PSRBs: {\emph{RQ3}}}
