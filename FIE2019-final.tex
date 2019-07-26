@@ -363,9 +363,7 @@ In summary, this shows that many UK institutions have now embedded cybersecurity
 
 \section{Conclusions and Future Work}
 
-The work presented in this paper is a first step towards better understanding the nature, design, structure and assessment of cybersecurity education in the UK, through the lens of accreditation. It is clear that professional body accreditation is having a positive effect on universities, supporting wider national policy imperatives. It is also clear that there is a significant need for mobilising the international computer science academic community -- alongside some of the existing initiatives presented at the start of this paper -- to continue this focus on cybersecurity education, and provide international comparators, portability and sharing of best practice. 
-
-As regards to the three research questions:
+The work presented in this paper is a first step towards better understanding the nature, design, structure and assessment of cybersecurity education in the UK, through the lens of accreditation. It is clear that PSRB accreditation is having a positive effect on universities, supporting wider national policy imperatives. It is also clear that there is a significant need for mobilising the international computer science academic community -- alongside some of the existing initiatives presented at the start of this paper -- to continue this focus on cybersecurity education, and provide international comparators, portability and sharing of best practice. With regards to the three research questions:
 
 \begin{description}
 \item[RQ1:] {\emph{What cybersecurity is taught and what cybersecurity should be taught to the general computer science students?}}
@@ -374,20 +372,20 @@ The guidelines from both ACM and BCS are good for general education. However, th
 
 \item[RQ2:] {\emph{Should cybersecurity be taught stand-alone or in an integrated manner to general computer science students?}}
 
-The recommendation in \cite[p. 98]{ACM2013a} that cybersecurity be taught largely through other Knowledge Areas is, in abstract, a good idea.  However, in the current state of education resources (sections \S\ref{sec:EDResource})  may be a counsel caution in this approach.  It is more important that issues like SQL injection \cite{Drop2019} or correct use of SSL/TLS \cite{Chenetal2019a} be taught somewhere than that they not be taught at all.
-Nevertheless, it is wrong for a complete curriculum to ignore cybersecurity issues for example:
+The recommendation in \cite[p. 98]{ACM2013a} that cybersecurity be taught largely through other Knowledge Areas is, in abstract, a good idea.  However, in the current state of education resources (sections \S\ref{sec:EDResource}) may be a counsel caution in this approach.  It is more important that issues like SQL injection \cite{Drop2019} or correct use of SSL/TLS \cite{Chenetal2019a} be taught somewhere than that they not be taught at all. Nevertheless, it is wrong for a complete curriculum to ignore cybersecurity issues for example:
+
 \begin{itemize}
 	\item teach SQL without teaching SQL Injection~\cite{Drop2019};
 	\item teach ``web programming'' without teaching Cross-Site Scripting \cite[(XSS)]{OWASP2017a};
 	\item ignore the  impact of GDPR upon systems development;
-	\item uncritically teach the use of Agile Development to develop secure systems.
+	\item uncritically teach the use of Agile development to develop secure systems.
 \end{itemize}
-\par
+
 The BCS-identified good practice of exploring cybersecurity via a project referencing Industry Standards, possibly PCI DSS, is commended (\S\ref{sec:PCIDSS}).
 
 \item[RQ3:] {\emph{Can accreditation by PSRBs enhance the provision of cybersecurity within a body's jurisdiction?}}
 
-Accreditation (as practised by BCS in the UK) is a valuable tool in improving the standard of cybersecurity teaching, and disseminating good practice, and should continue this. The time-lag in adoption of cybersecurity in the US seems to be caused by the accreditation differences more than any other factors.
+Accreditation (as practised by BCS in the UK) is a valuable tool in improving the standard of cybersecurity teaching, and disseminating good practice, and should continue this. The time-lag in adoption of cybersecurity in the USA seems to be caused by the accreditation differences more than any other factors.
 \end{description}
 
 We also have the following specific recommendations:
@@ -395,8 +393,9 @@ We also have the following specific recommendations:
 \begin{enumerate}
 \item Database courses should look carefully at the security aspects of the texts they use, and the examples they quote, on the lines of \cite{Drop2019}.
 \item Web Programming courses should  do the same, with emphasis on the avoidance of Cross-Site Scripting, and, for production use, the use of a suitable framework\footnote{Most modern frameworks do, but this is not often discussed when looking at the advantages of frameworks. Even Mozilla's tutorial (\url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Web_frameworks}) is silent.} that has Cross-Site Request Forgery protection. 
-\item A study similar to \cite{Drop2019} is recommended for future work in Web Programming, Agile Development, Android Development and potentially other areas of the curriculum.
+\item A study similar to \cite{Drop2019} is recommended for future work focusing on Java development, Android development and Agile development, and potentially other areas of the curriculum, to better understand how modern textbooks support key areas of the curriculum.
 \item All computer science courses should emphasise that informal resources should come with a ``security health warning'': see sections \ref{sec:informal} and \ref{sec:Java}. One should probably use the data from \cite{Chenetal2019a}: ``{\emph{If you pick up a SSL/TLS answer from Stack Overflow, there's a 70\% chance it's insecure}}''.
+\item Finally, further work exploring and evaluating effective pedagogical and assessment approaches for cybersecurity education, in a similar vein to what has been seen with computer science education more generally (e.g.~\cite{davenport-et-al:latice2016}).
 \end{enumerate}
 
 \section*{Acknowledgements}
