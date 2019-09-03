@@ -49,14 +49,11 @@ The BCS has been promoting further inclusion of Cybersecurity within general Com
 
 \section*{Introduction}
 
-Cybersecurity has increasingly been a headline feature in the news over recent years, generally prompted by spectacular breaches, including major credit reference agencies (Equifax), telecoms companies (Talk Talk), national airlines BritishAirways, online dating websites (Ashley Madison), and even between sovereign governments (The UK National Cyber Security  Centre has reported Rusian activity). 
+Cybersecurity matters, breaches are legion and sadly are a common feature in the news. Universities are  addressing the demand for educated cybersecurity professionals.  There are calls for formal education to respond to this situation. This is reinforced by a wider focus on digital skills and computer science education reform, especially across the nations of the UK. 
 
-These global cybersecurity crises have compelled academic institutions to address the demand for educated cybersecurity professionals.  With this significant economic and societal focus on cybersecurity, there are calls for formal education -- school-level as well as tertiary -- to respond to this situation, at the individual level and via recommended curricula and professional accreditation requirements. This is further reinforced by a wider focus on digital skills and computer science education reform, especially across the nations of the UK. 
+This raises the question, should cybersecurity be of importance for all or just for specialists? There is a serious need for cybersecurity specialists, but also all in IT need to know \emph{some} cybersecurity -- thus, there is a case for both. 
 
-\section*{Cybersecurity For All, Or Just For Specialists?}
-
-There is a serious need for cybersecurity specialists (estimates vary, but are always large), but also all in IT need to know \emph{some} cybersecurity -- thus, there is a case for depth as well as breadth. There has been recognition of the need for the inclusion of cybersecurity as part of the discipline of computer science for a number of years.  
-
+In this article we explore some of the challenges related to cybersecurity education of general computer scientists (including information technology and other related degrees), and what we, the BCS, have been doing to enhance cybersecurity in education at university.
 
 % \section*{Methodology}
 
@@ -93,23 +90,20 @@ There is a serious need for cybersecurity specialists (estimates vary, but are a
 
 
 \section*{Challenges} \label{sec}
-
-
 % TC: pick a couple of these as examples?
 \subsection*{Educational Resources}\label{sec:EDResource}
-
-SQL injection is still a major weakness: number one in the Open Web Application Security Project (OWASP) Top 10 , and has been in the Top 10 since at least 2003. 
-
-It is hard to determine what is actually delivered as part of a specific degree programme, but a reasonable proxy for this is the content of recommended textbooks. This was the rationale for a 2019 analysis of database textbooks used by 44 of the top 50 computer science departments in the USA~\cite{Drop2019}.  There were seven such books, but three books accounted for the 36 of the 44 universities. Five of the seven (30 of the 44) had no mention of SQL injection. On the other two, the more popular one has a seriously flawed discussion. 
+It is hard to determine what is actually delivered as part of a degree programme, but a reasonable proxy for this are recommended textbooks and other supporting resources.
+\subsubsection*{The Case of SQL Injection}\label{sec:SQL}
+SQL injection is a major weakness: number one in the Open Web Application Security Project (OWASP) Top 10 , and has been in the Top 10 since at least 2003. Database textbooks where analysed in 2019 ~\cite{Drop2019}.  There were seven such books, but three books accounted for the 36 of 44 universities. Five of the seven (30 of the 44) had no mention of SQL injection. On the other two, the more popular one has a seriously flawed discussion. 
 
 \subsubsection*{The Case of Java}\label{sec:Java}
 
-Many Java books go nowhere near security applications.  This means that the programmer who has to implement security is left to the documentation of the package/API being used, and to informal resources. \cite{Mengetal2018a} analysed 503 cybersecurity-related postings on the popular Stack Overflow online resource. 53\% were about the Spring Security framework, dominated by authentication (45\%). The discussion \cite[\S4.3.1]{Mengetal2018a} of cross-site request forgery (CSRF) is especially worrying.  By default, Spring implicitly enables protection against this. But all the accepted answers to CSRF-related failures simply suggested disabling the check. There were no negative comments about this, and indeed a typical response is ``{\emph{Adding}} \verb!csrf().disable()!
-{\emph{{solved the issue!!! I have no idea why it was enabled by default}}''. As of writing, there were no negative comments about this disabling of a vital security feature.}
+Many Java books do not cover security.  If you want to know about security you need to look at the documentation of the package/API being used, and/or  informal resources. \cite{Mengetal2018a} analysed 503 cybersecurity-related postings on the popular Stack Overflow online resource. 53\% were about the Spring Security framework, dominated by authentication (45\%).  One example being, by default, Spring enables protection against cross-site request forgery (CSRF). But all the accepted answers to CSRF-related failures simply suggested disabling the check. There were no negative comments about this, and indeed a typical response is ``{\emph{Adding}} \verb!csrf().disable()!
+{\emph{{solved the issue!!! I have no idea why it was enabled by default}}''. }
 
 \subsubsection*{Android}\label{sec:Android}
 
-For Android textbooks; \cite{Fischeretal2017a} looked specifically at the use of resources from Stack Overflow in Android applications. The key finding was:
+For Android, \cite{Fischeretal2017a} looked specifically at the use of resources from Stack Overflow. The key finding was:
 
 \begin{quote}
 ``{\emph{We found that 15.4\% of all 1.3 million Android applications
@@ -120,21 +114,15 @@ insecure code snippet.}}''
 
 \subsubsection*{Informal Resources}\label{sec:informal}
 
-The web abounds with informal resources, such as tutorials and code snippets. How good are these, and how good are people at using these? This has been looked at by \cite{Unruhetal2017a}, taking the top five search results from Google for six queries. Of these 30 tutorials, six had SQL injection weaknesses, and three had Cross-Site Scripting (Number 7 in OWASP's Top Ten) weaknesses. Searching for these fragments in PHP projects on GitHub found 820 instances of these fragments, of which 117 were verified manually to be vulnerable --- 80\% of which were vulnerable to SQL injection. 
+The web abounds with informal resources, such as tutorials and code snippets. How good are these? One invesigation \cite{Unruhetal2017a}, took the top five search results from Google for six queries. Of these 30 tutorials, six had SQL injection weaknesses, and three had Cross-Site Scripting (Number 7 in OWASP's Top Ten) weaknesses. Searching for these fragments in PHP projects on GitHub found 820 instances of these fragments, of which 117 were verified manually to be vulnerable --- 80\% of which were vulnerable to SQL injection. 
 
 \subsection*{Who will teach the Cybersecurity?}\label{sec:staffing}
 
-It is well known that cybersecurity skills are in short supply, in both industry and academia. The demand for cybersecurity skills in industry makes it difficult for academia to attract academics with knowledge, practical experience, research background and academic aspirations. As universities expand their cybersecurity provision it is not uncommon to find multiple jobs advertised at the same time. 
+Cybersecurity skills are in short supply, in both industry and academia. The demand for cybersecurity skills in industry makes it difficult for academia to attract academics with knowledge, practical experience, research background and academic aspirations. As universities expand their cybersecurity provision it is not uncommon to find multiple jobs advertised at the same time. 
 
-\section*{Accreditation of degree courses }
+\section*{What has the BCS been doing to promote the inclusion of cyber security in general computer science degrees? }
 
-In the UK --- as in most jurisdictions --- higher education provision addresses general computer science and specialist cybersecurity courses. A significant number of undergraduate and postgraduate programmes are available in both the areas of computer science and cybersecurity (and closely related fields, such as computer security, digital/computer forensics, etc). 
-
-
-% TC: main case study
-\section*{BCS Accreditation}
-
-Since 2010 the BCS has evolved its accreditation practices to promote and mandate the inclusion of of first information security (2010) and then cybersecurity (2013) within the programmes the body accredits. 
+ The BCS has been using our accreditation process to mandate formal inclusion of information security (2010) and then cybersecurity (2013) within the programmes we accredit. 
 
 % The timeline which this process has followed in presented in Table~\ref{table:1}, and will be discussed in more detail in the following case study.
 
@@ -161,21 +149,15 @@ Since 2010 the BCS has evolved its accreditation practices to promote and mandat
 %   \end{table}
 %\end{center}
 
-\subsection*{Developing Expectations}
+Industry, higher education, government and the relevant professional bodies have collaborated on the production of a set of guidelines which are to the benefit of the various stakeholders and wider society as discussed in a previous issue of ITNow~\cite{Irons2016}. This work led to the production of reference guidelines (``{\emph{Cybersecurity Principles and Learning Outcomes}}'')  and established a baseline of common knowledge, example learning outcome domains for cybersecurity within the degree courses and guidance on embedding the concepts. 
 
-Internationally the expectations regarding both the breadth and depth of the expected cybersecurity coverage has been the subject of much discussion, debate and analysis. Like many governments, the UK Government has actively been seeking ways to address this. In parallel to the work completed by the ACM in the USA, considerable effort in the UK have been taken to ensure industry, higher education, government and the relevant professional bodies collaborated on a set of guidelines which are to the benefit of the various stakeholders and wider society as discussed in a previous issue of ITNow~\cite{Irons2016}.
+Since 2015, we have been expecting accredited degrees to be compliant with the cybersecurity guidelines. A full cycle of accreditation visits has not yet taken place following this inclusion in requirements. What is being observed is the majority of visited institutions have now either adjusted their curricula to extend the coverage of cybersecurity or have a plan in place to do so. However, a minority are requiring encouragement to do so.
 
-The produced reference guidelines (``{\emph{Cybersecurity Principles and Learning Outcomes}}'')  established a baseline of common knowledge, example learning outcome domains for cybersecurity within the computer science courses and guidance on embedding the concepts. The document provides specific guidance for embedding and enhancing relevant cybersecurity principles, concepts and learning outcomes within their undergraduate curricula. 
+From the start of the Autumn 2015 term, up to and including the Summer 2019 term, the BCS have carried out 82 accreditation visits (including five international visits (2 in South Africa and 1 in Brunei, Cyprus, and Ireland)) . The BCS identified action was required to address concerns related to cybersecurity at 23 institutions; thus, 59 institutions were already delivering cybersecurity in keeping with the BCS expectations.
 
-\subsection*{Accreditation: What Progress Has Been Made?}
-
-This initiative is a collective attempt to formally include cybersecurity in all BCS Accredited programmes. Some of these programmes will be specialist cybersecurity programmes, however the majority will take a different emphasis; this is a work in progress. A full cycle of accreditation visits has not yet taken place following the adjustment to the BCS Guidelines. What is being observed is the majority of visited institutions have now either adjusted their curricula to extend the coverage of cybersecurity or have a plan in place to do so. However, a minority are requiring encouragement to do so.
-
-From the start of the Autumn 2015 term, up to and including the Autumn 2018 term, the BCS have carried out 70 accreditation visits (including four international visits). The BCS identified action was required to address concerns related to cybersecurity at 16 institutions; thus, 54 institutions were already delivering cybersecurity in keeping with the BCS expectations.
-
-Long-term actions were expected from 12 institutions (six in 2015/16, three in 2016/17 and three in Autumn 2018) who were awarded `{\emph{At Threshold}}' judgments. Ten of these judgments were across all programmes; one was specifically against a generalist masters programme only. This indicates that the BCS will expect adjustments to have taken place before the next accreditation visit. As indicated earlier, this was commonly the case that adjustments had been made to approved programmes of study, however the adjusted modules had not yet been delivered so the evidence base was incomplete in terms of how cybersecurity was assessed.
+Long-term actions (`{\emph{At Threshold}}' judgements) were expected from 14 institutions (six in 2015/16, three in 2016/17 and five in 2018/19). Thirteen of these judgments were across all programmes; one was specifically against a generalist masters programme only. This indicates that the BCS will expect adjustments to have taken place before the next accreditation visit. It was commonly the case that adjustments had been made to design of the programmes of study, however the adjusted programme had not yet been delivered so the evidence base was incomplete in terms of how cybersecurity was assessed.
  
-Short terms 90 Day Responses where required from four institutions; the outcomes of these actions were as follows: ({\emph{i}}) of the 11 UG programmes involved all were approved `{\emph{At Threshold}}'; ({\emph{ii}}) of the nine UG programmes involved, eight were approved and one refused; ({\emph{iii}}) of the five UG programmes involved, all approved `{\emph{At Threshold}}'; and ({\emph{iv}}) of the 3 UG programmes involved, all 3 were refused.
+Short term actions were required from nine institutions; the outcomes of these actions were as follows: ({\emph{i}}) of the 11 UG programmes involved all were approved `{\emph{At Threshold}}'; ({\emph{ii}}) of the nine UG programmes involved, eight were approved and one refused; ({\emph{iii}}) of the five UG programmes involved, all approved `{\emph{At Threshold}}'; and ({\emph{iv}}) of the 3 UG programmes involved, all 3 were refused; and ({\emph{v}}) a further 5 which at the time of writing the outcome is not known
 
 % \begin{itemize}                                                                
 % \item Of the 11 UG programmes involved all were approved `{\emph{At Threshold}}';
@@ -184,36 +166,27 @@ Short terms 90 Day Responses where required from four institutions; the outcomes
 % \item Of the 3 UG programmes involved, all 3 were refused.
 % \end{itemize}
  
-Good practice was identified at one university by the commendation:
+Good practice was identified at three universities by the commendation:
 
  \begin{quote}
 ``{\emph{The second year project provides an opportunity for exploring security aspects in depth with an industrial use case.}}''
 \end{quote}
+\begin{quote}
+``{\emph{Hacktivity and related learning and teaching approaches}}''
+\end{quote}
+\begin{quote}
+``{\emph{Cyber Security Centre which permeates both the course and supports external links and opportunities for students.}}''
+\end{quote}
 
-In summary, this shows that many UK institutions have now embedded cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. Clearly not all institutions in the UK necessarily have to apply for BCS accreditation, or apply for accreditation for all their programmes, but even so this is significant evidence of inclusion of cybersecurity to an agreed standard.
+In summary, this shows that many accredited institutions have now embedded cybersecurity in their provision, a number are in the process of doing so and a minority have chosen not to. 
 
 \section*{Looking Ahead}
 
-The work presented in this article is a first step towards better understanding the nature, design, structure and assessment of cybersecurity education in the UK It is clear that we the BCS are having a positive effect on universities via accreditation, supporting wider national policy imperatives. However:
+The BCS are improving the cybersecurity capacity in the UK by enhancing the education experience of the graduates on BCS Accredited degree programmes. If you want to reassured the graduates you recruit have some cyber knowledge then seek a BCS accredited degree. There are challenges ahead in terms of enhancing the resources upon which the degree provision depends.
 
-\begin{description}
-\item  It  would seem to be necessary to adopt an attitude of caution with respect to both offline (\S\ref{sec:SQL}) and online (\S\ref{sec:Java}) resources. 
+% This article focused upon University Education. What cybersecurity capability (and 
+%development needs) exists in terms of the existing workforce,  the person in the street, etc % could benefit from a similar exploration.
 
-\item Cybersecurity can be taught largely through other Knowledge Areas is a good idea.  However, in the current state of education resources (sections \S\ref{sec:EDResource}) may be a counsel caution in this approach. 
-
-\item 
-Our Accreditation  is a valuable tool in improving the standard of cybersecurity teaching, and disseminating good practice, and should continue this. 
-
-\item
-This article focused upon University Education. What cybersecurity capability (and development needs) exists in terms of the existing workforce,  the person in the street, etc could benefit from a similar exploration.
-\end {description}
-
-
-\section*{Acknowledgements}
-
- The authors wish to thank Sally Pearce, Academic Accreditation Manager at BCS, The Chartered Institute for IT for supplying the summary information related to accreditation of UK degree programmes. Many people, accreditors and accredited, have contributed to improving the standard of cybersecurity teaching in the UK, and spreading good practice.  All authors' institutions are members of the Institute of Coding, an initiative funded by the Office for Students (England) and the Higher Education Funding Council for Wales.
-
- {\emph{N.B.}} The first two authors are current Vice-Presidents of the BCS, and the third and fourth are past and present Chairs of the BCS Academic Accreditation Committee, providing significant personal insight into the UK's national accreditation policy and procedures.
 
 % bib
 \bibliographystyle{unsrt}
